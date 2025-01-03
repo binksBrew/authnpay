@@ -1,0 +1,183 @@
+/* Find Us Section */
+.find-us-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #f8faff, #ffffff); /* Subtle blue gradient */
+  border-radius: 16px;
+  margin: 4rem auto;
+  max-width: 85%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem; /* Increased gap for more spacing */
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+
+.find-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Adjusted gap for responsiveness */
+}
+
+.form-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-section h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Ensure rows wrap on smaller screens */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+  resize: none;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.form-checkbox label {
+  line-height: 1.4;
+}
+
+.send-message-btn {
+  background: #0d6efd;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+}
+
+.send-message-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Details Section */
+.details-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.details-section h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.details {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+}
+
+.details p strong {
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive Styles */
+
+/* Tablet Screens */
+@media (max-width: 768px) {
+  .find-us-section {
+    flex-direction: column; /* Stack sections vertically */
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+
+  .form-section,
+  .details-section {
+    min-width: 100%; /* Full width for sections */
+  }
+
+  .form-section h2,
+  .details-section h2 {
+    font-size: 1.8rem; /* Slightly smaller headings */
+  }
+
+  .form-row {
+    flex-direction: column; /* Stack form elements vertically */
+  }
+
+  input,
+  textarea {
+    padding: 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  .send-message-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .find-us-section {
+    padding: 2rem 1rem;
+  }
+
+  .form-section h2,
+  .details-section h2 {
+    font-size: 1.6rem; /* Smaller headings for mobile */
+  }
+
+  input,
+  textarea {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .send-message-btn {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+}

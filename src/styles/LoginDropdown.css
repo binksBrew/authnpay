@@ -1,0 +1,123 @@
+/* Login Dropdown Styles */
+.login-dropdown {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    z-index: 1000;
+    width: 400px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.login-left {
+    flex: 1;
+    padding-right: 15px;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-left a {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: color 0.3s ease-in-out;
+}
+
+.login-left a:hover {
+    color: #003370;
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.big-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #004a99;
+    text-transform: uppercase;
+}
+
+.login-right {
+    flex: 2;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.platform-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.platform-icons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platform-icons li a img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.platform-icons li a img:hover {
+    transform: scale(1.0);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-dropdown {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .login-left {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 15px;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .login-right {
+        padding-left: 0;
+    }
+
+    .platform-icons {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

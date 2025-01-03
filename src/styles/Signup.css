@@ -1,0 +1,67 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e8f4fc, #cfe5f9); /* Light blue gradient */
+    padding: 20px;
+}
+
+.signup-form {
+    background: white; /* White background for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.signup-form h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #004a99; /* Muted dark blue */
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.signup-form input,
+.signup-form select,
+.signup-form textarea {
+    width: calc(100% - 20px); /* Ensures padding inside the input field */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.signup-form input:focus,
+.signup-form select:focus,
+.signup-form textarea:focus {
+    border-color: #004a99; /* Highlight color on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 74, 153, 0.3);
+}
+
+.signup-form button {
+    width: calc(100% - 20px); /* Adjusted to match the input width */
+    background-color: #004a99; /* Dark blue button */
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+    background-color: #003370; /* Slightly darker for hover */
+}

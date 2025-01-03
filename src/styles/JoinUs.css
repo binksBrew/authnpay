@@ -1,0 +1,63 @@
+.join-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    background: linear-gradient(to right, #e0f2ff, #cceaff);
+    border-radius: 12px; /* Slightly larger border-radius for better aesthetics */
+    margin: 4rem auto; /* Add vertical margin to separate the section */
+    max-width: 90%; /* Center the section and limit its width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted appearance */
+  }
+  
+  .join-us-content {
+    flex: 1;
+    max-width: 600px;
+    color: #333;
+    margin-right: 2rem; /* Add spacing between content and image */
+  }
+  
+  .join-us-content h2 {
+    font-size: 2.5rem; /* Increase font size for better emphasis */
+    font-weight: bold;
+    margin-bottom: 1.5rem; /* Increase bottom margin for better spacing */
+  }
+  
+  .join-us-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem; /* Increase bottom margin for better spacing */
+  }
+  
+  .sign-up-btn {
+    background: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .sign-up-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px); /* Add hover animation for interactivity */
+  }
+  
+  .join-us-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; /* Add padding around the image */
+  }
+  
+  .join-us-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 320px; /* Increase image height slightly */
+    border-radius: 8px; /* Add subtle rounding to the image edges */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for the image */
+  }
+  
