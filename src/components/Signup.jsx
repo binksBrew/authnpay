@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Signup.css';
 
 const Signup = () => {
+    useEffect(() => {
+        // Scroll to the top of the page when the component is loaded
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="signup-container">
             <form className="signup-form">
