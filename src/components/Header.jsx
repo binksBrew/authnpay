@@ -4,27 +4,28 @@
 // import "../styles/LoginDropdown.css";
 // import servicesData from "./servicesData";
 // import loginApp from "../assets/loginapp.png";
+// import userIcon from "../assets/user.png"; // Import the user icon
 
 // const Header = () => {
 //   const [showPricingDropdown, setShowPricingDropdown] = useState(false);
-//   const [showLoginDropdown, setShowLoginDropdown] = useState(false);
+//   const [showUserDropdown, setShowUserDropdown] = useState(false); // State for the user icon dropdown
 
 //   const handleTogglePricingDropdown = (e) => {
 //     e.preventDefault();
 //     setShowPricingDropdown((prev) => !prev);
 //   };
 
-//   const handleToggleLoginDropdown = () => {
-//     setShowLoginDropdown((prev) => !prev);
+//   const handleToggleUserDropdown = () => {
+//     setShowUserDropdown((prev) => !prev);
 //   };
 
 //   const closeDropdowns = (e) => {
 //     if (
 //       !e.target.closest(".pricing-dropdown-wrapper") &&
-//       !e.target.closest(".login-dropdown-wrapper")
+//       !e.target.closest(".user-dropdown-wrapper")
 //     ) {
 //       setShowPricingDropdown(false);
-//       setShowLoginDropdown(false);
+//       setShowUserDropdown(false);
 //     }
 //   };
 
@@ -42,7 +43,7 @@
 //       </div>
 //       <nav className="nav-links">
 //         <Link to="/">Home</Link>
-//         <Link to="/services">Services</Link>
+//         <Link to="/services">Services</Link> {/* Link to the Services page */}
 //         <div className="pricing-dropdown-wrapper">
 //           <Link
 //             to="#"
@@ -68,157 +69,33 @@
 //         </div>
 //         <Link to="/livedemo">Live Demo</Link>
 //       </nav>
-//       <div className="cta-buttons login-dropdown-wrapper">
-//         <button className="login-btn" onClick={handleToggleLoginDropdown}>
-//           Login
-//         </button>
-//         {showLoginDropdown && (
-//           <div className="login-dropdown">
-//             <div className="login-left">
-//               <Link to="/authnpay">
-//                 <p className="small-text">Pay with</p>
-//                 <p className="big-text">AuthnPay</p>
-//               </Link>
-//             </div>
-//             <div className="login-right">
-//               <ul className="platform-icons">
-//                 {[
-//                   "WordPress",
-//                   "Shopify",
-//                   "Wix",
-//                   "Magento",
-//                   "JavaScript",
-//                   "React",
-//                   "Angular",
-//                   "Vue",
-//                   "Android",
-//                   "iOS",
-//                   "Flutter",
-//                   "React Native",
-//                 ].map((platform) => (
-//                   <li key={platform}>
-//                     <a href="#" target="_blank" rel="noopener noreferrer">
-//                       <img src={loginApp} alt={platform} />
-//                     </a>
-//                   </li>
-//                 ))}
-//               </ul>
-//             </div>
-//           </div>
-//         )}
+//       <div className="cta-buttons">
+//         {/* Trusted Devices Button */}
+//         <Link to="/trusted-devices">
+//           <button className="trusted-device-btn">Trusted Devices</button>
+//         </Link>
 //         <Link to="/signup">
 //           <button className="signup-btn">Get Started</button>
 //         </Link>
-//       </div>
-//     </header>
-//   );
-// };
 
-// export default Header;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
-// import "../styles/Header.css";
-// import "../styles/LoginDropdown.css";
-// import servicesData from "./servicesData";
-// import loginApp from "../assets/loginapp.png";
-
-// const Header = () => {
-//   const [showPricingDropdown, setShowPricingDropdown] = useState(false);
-//   const [showLoginDropdown, setShowLoginDropdown] = useState(false);
-
-//   const handleTogglePricingDropdown = (e) => {
-//     e.preventDefault();
-//     setShowPricingDropdown((prev) => !prev);
-//   };
-
-//   const handleToggleLoginDropdown = () => {
-//     setShowLoginDropdown((prev) => !prev);
-//   };
-
-//   const closeDropdowns = (e) => {
-//     if (
-//       !e.target.closest(".pricing-dropdown-wrapper") &&
-//       !e.target.closest(".login-dropdown-wrapper")
-//     ) {
-//       setShowPricingDropdown(false);
-//       setShowLoginDropdown(false);
-//     }
-//   };
-
-//   const handleDropdownItemClick = () => {
-//     setShowPricingDropdown(false); // Close the dropdown when an item is clicked
-//   };
-
-//   useEffect(() => {
-//     document.addEventListener("click", closeDropdowns);
-//     return () => {
-//       document.removeEventListener("click", closeDropdowns);
-//     };
-//   }, []);
-
-//   return (
-//     <header className="header">
-//       <div className="logo">
-//         <Link to="/">AuthnPay</Link>
-//       </div>
-//       <nav className="nav-links">
-//         <Link to="/">Home</Link>
-//         <Link to="/services">Services</Link>
-//         <div className="pricing-dropdown-wrapper">
-//           <Link
-//             to="#"
-//             className="pricing-link"
-//             onClick={handleTogglePricingDropdown}
-//           >
-//             Pricing
-//           </Link>
-//           {showPricingDropdown && (
-//             <div className="dropdown-content show">
-//               {servicesData.map((service) => (
-//                 <Link
-//                   to={`/services/${service.id}`}
-//                   key={service.id}
-//                   className="dropdown-item"
-//                   onClick={handleDropdownItemClick} // Close the dropdown on click
-//                 >
-//                   <img src={service.img} alt={service.title} />
-//                   <h4>{service.title}</h4>
-//                 </Link>
-//               ))}
-//             </div>
-//           )}
+//         {/* User Icon with Dropdown */}
+//         <div
+//           className="user-dropdown-wrapper"
+//           onClick={handleToggleUserDropdown}
+//         >
+//           <img src={userIcon} alt="User Icon" className="user-icon" />
 //         </div>
-//         <Link to="/livedemo">Live Demo</Link>
-//       </nav>
-//       <div className="cta-buttons login-dropdown-wrapper">
-//         <button className="login-btn" onClick={handleToggleLoginDropdown}>
-//           Login
-//         </button>
-//         {showLoginDropdown && (
+//         {showUserDropdown && (
 //           <div className="login-dropdown">
-//             <div className="login-left">
-//               <Link to="/authnpay">
-//                 <p className="small-text">Pay with</p>
-//                 <p className="big-text">AuthnPay</p>
-//               </Link>
-//             </div>
-//             <div className="login-right">
-//               <ul className="platform-icons">
-//                 {[
+//             <Link to="/authnpay" className="login-left">
+//               {/* Entire left section clickable */}
+//               <p className="small-text">Pay with</p>
+//               <p className="big-text">AuthnPay</p>
+//             </Link>
+//             <Link to="/platforms" className="login-right">
+//               {/* Entire right section clickable */}
+//               <div className="platform-icons">
+//                 {[  
 //                   "WordPress",
 //                   "Shopify",
 //                   "Wix",
@@ -232,25 +109,31 @@
 //                   "Flutter",
 //                   "React Native",
 //                 ].map((platform) => (
-//                   <li key={platform}>
-//                     <a href="#" target="_blank" rel="noopener noreferrer">
-//                       <img src={loginApp} alt={platform} />
-//                     </a>
-//                   </li>
+//                   <img key={platform} src={loginApp} alt={platform} />
 //                 ))}
-//               </ul>
-//             </div>
+//               </div>
+//             </Link>
 //           </div>
 //         )}
-//         <Link to="/signup">
-//           <button className="signup-btn">Get Started</button>
-//         </Link>
 //       </div>
 //     </header>
 //   );
 // };
 
 // export default Header;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -264,40 +147,29 @@ import "../styles/Header.css";
 import "../styles/LoginDropdown.css";
 import servicesData from "./servicesData";
 import loginApp from "../assets/loginapp.png";
+import userIcon from "../assets/user.png"; // Import the user icon
 
 const Header = () => {
   const [showPricingDropdown, setShowPricingDropdown] = useState(false);
-  const [showLoginDropdown, setShowLoginDropdown] = useState(false);
-
-  const handleScrollToServices = (e) => {
-    e.preventDefault();
-    const servicesSection = document.getElementById("services");
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const [showUserDropdown, setShowUserDropdown] = useState(false); // State for the user icon dropdown
 
   const handleTogglePricingDropdown = (e) => {
     e.preventDefault();
     setShowPricingDropdown((prev) => !prev);
   };
 
-  const handleToggleLoginDropdown = () => {
-    setShowLoginDropdown((prev) => !prev);
+  const handleToggleUserDropdown = () => {
+    setShowUserDropdown((prev) => !prev);
   };
 
   const closeDropdowns = (e) => {
     if (
       !e.target.closest(".pricing-dropdown-wrapper") &&
-      !e.target.closest(".login-dropdown-wrapper")
+      !e.target.closest(".user-dropdown-wrapper")
     ) {
       setShowPricingDropdown(false);
-      setShowLoginDropdown(false);
+      setShowUserDropdown(false);
     }
-  };
-
-  const handleDropdownItemClick = () => {
-    setShowPricingDropdown(false); // Close the dropdown when an item is clicked
   };
 
   useEffect(() => {
@@ -314,9 +186,7 @@ const Header = () => {
       </div>
       <nav className="nav-links">
         <Link to="/">Home</Link>
-        <a href="#services" onClick={handleScrollToServices}> {/* Updated Link */}
-          Services
-        </a>
+        <Link to="/services">Services</Link> {/* Link to the Services page */}
         <div className="pricing-dropdown-wrapper">
           <Link
             to="#"
@@ -329,10 +199,9 @@ const Header = () => {
             <div className="dropdown-content show">
               {servicesData.map((service) => (
                 <Link
-                  to={`/services/${service.id}`}
+                  to={`/services/${service.id}/pricing`} // Updated to point to pricing page
                   key={service.id}
                   className="dropdown-item"
-                  onClick={handleDropdownItemClick} // Close the dropdown on click
                 >
                   <img src={service.img} alt={service.title} />
                   <h4>{service.title}</h4>
@@ -343,21 +212,33 @@ const Header = () => {
         </div>
         <Link to="/livedemo">Live Demo</Link>
       </nav>
-      <div className="cta-buttons login-dropdown-wrapper">
-        <button className="login-btn" onClick={handleToggleLoginDropdown}>
-          Login
-        </button>
-        {showLoginDropdown && (
+      <div className="cta-buttons">
+        {/* Trusted Devices Button */}
+        <Link to="/trusted-devices">
+          <button className="trusted-device-btn">Trusted Devices</button>
+        </Link>
+        <Link to="/signup">
+          <button className="signup-btn">Get Started</button>
+        </Link>
+
+        {/* User Icon with Dropdown */}
+        <div
+          className="user-dropdown-wrapper"
+          onClick={handleToggleUserDropdown}
+        >
+          <img src={userIcon} alt="User Icon" className="user-icon" />
+        </div>
+        {showUserDropdown && (
           <div className="login-dropdown">
-            <div className="login-left">
-              <Link to="/authnpay">
-                <p className="small-text">Pay with</p>
-                <p className="big-text">AuthnPay</p>
-              </Link>
-            </div>
-            <div className="login-right">
-              <ul className="platform-icons">
-                {[
+            <Link to="/authnpay" className="login-left">
+              {/* Entire left section clickable */}
+              <p className="small-text">Pay with</p>
+              <p className="big-text">AuthnPay</p>
+            </Link>
+            <Link to="/platforms" className="login-right">
+              {/* Entire right section clickable */}
+              <div className="platform-icons">
+                {[  
                   "WordPress",
                   "Shopify",
                   "Wix",
@@ -371,19 +252,12 @@ const Header = () => {
                   "Flutter",
                   "React Native",
                 ].map((platform) => (
-                  <li key={platform}>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                      <img src={loginApp} alt={platform} />
-                    </a>
-                  </li>
+                  <img key={platform} src={loginApp} alt={platform} />
                 ))}
-              </ul>
-            </div>
+              </div>
+            </Link>
           </div>
         )}
-        <Link to="/signup">
-          <button className="signup-btn">Get Started</button>
-        </Link>
       </div>
     </header>
   );

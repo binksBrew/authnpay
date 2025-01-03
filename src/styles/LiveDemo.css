@@ -16,6 +16,7 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 500px; /* Fixed height for consistent box size */
 }
 
 /* Left Section */
@@ -46,8 +47,12 @@
 .livedemo-right {
     flex: 1.5;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content stays aligned */
 }
 
+/* Toggle Buttons */
 .toggle-buttons {
     display: flex;
     margin-bottom: 20px;
@@ -78,10 +83,16 @@
 .livedemo-form {
     display: flex;
     flex-direction: column;
+    flex-grow: 1; /* Allow form to take up available space */
+    justify-content: space-between; /* Evenly space the form content */
 }
 
 .form-group {
     margin-bottom: 15px;
+}
+
+.form-group:last-child {
+    margin-bottom: 0; /* No extra margin at the bottom */
 }
 
 .form-group label {
@@ -141,6 +152,7 @@
 @media (max-width: 768px) {
     .livedemo-content {
         flex-direction: column; /* Stack the left and right sections */
+        height: auto; /* Allow height to adjust for smaller screens */
     }
 
     .livedemo-left {

@@ -1,129 +1,134 @@
-.service-detail-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: 25px auto;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+.service-detail-wrapper {
+    background: linear-gradient(180deg, #f5f9ff, #dce7ff); /* Lighter blue gradient */
+    color: #1a1a3d; /* Dark text for contrast */
+    padding: 4rem 1rem;
 }
 
-.service-detail-title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
-    font-weight: bold;
+.service-detail-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-wrap: wrap;
+    background-color: #e9f1ff; /* Light blue background for card */
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.service-detail-left {
+    flex: 1;
+    text-align: center;
+    border-right: 2px solid #c7d6f5; /* Subtle divider */
+    padding-right: 1.5rem;
 }
 
 .service-detail-icon {
     width: 100px;
     height: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Icon shadow for depth */
 }
 
-.service-detail-description {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.service-detail-extra {
-    text-align: left;
-    margin-top: 20px;
-}
-
-.service-detail-extra h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #007bff;
+.service-detail-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #3c5cff; /* Vibrant blue for the title */
     font-weight: bold;
-}
-
-.service-detail-extra p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.service-detail-pricing {
-    text-align: left;
-    margin-top: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    display: none; /* Initially hidden */
-    animation: fadeIn 0.3s ease-in-out;
-}
-
-.service-detail-pricing.show {
-    display: block; /* Display when toggled */
-}
-
-.service-detail-pricing h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #007bff;
-    font-weight: bold;
-}
-
-.service-detail-pricing p {
-    font-size: 1rem;
-    color: #555;
-}
-
-.service-detail-pricing-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.service-detail-pricing-table th,
-.service-detail-pricing-table td {
-    border: 1px solid #ddd;
-    padding: 12px;
-    text-align: center;
-    font-size: 0.95rem;
-    color: #333;
-}
-
-.service-detail-pricing-table th {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
-}
-
-.service-detail-pricing-table tr:nth-child(even) {
-    background-color: #f4f4f4;
 }
 
 .service-detail-pricing-button {
     margin-top: 20px;
     padding: 12px 25px;
     font-size: 1rem;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #4c6eff; /* Slightly lighter blue for buttons */
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .service-detail-pricing-button:hover {
-    background-color: #0056b3;
+    background-color: #3c5cff; /* Darker blue hover effect */
+    transform: scale(1.05);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
+.service-detail-right {
+    flex: 2;
+    padding-left: 1.5rem;
+}
+
+.service-detail-heading {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #1a1a3d; /* Dark text for contrast */
+}
+
+.service-detail-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #5a5a78; /* Muted dark text */
+}
+
+.service-detail-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-point {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #3c5cff; /* Blue for points */
+}
+
+.service-point::before {
+    content: "✔";
+    margin-right: 0.5rem;
+    color: #00cc88; /* Bright green checkmark */
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-detail-container {
+        flex-direction: column;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .service-detail-left {
+        border-right: none;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .service-detail-right {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-detail-title {
+        font-size: 1.5rem;
+    }
+
+    .service-detail-description {
+        font-size: 1rem;
+    }
+
+    .service-point {
+        font-size: 0.9rem;
+    }
+
+    .service-detail-pricing-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
     }
 }

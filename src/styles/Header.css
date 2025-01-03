@@ -51,6 +51,60 @@
   font-weight: bold;
 }
 
+/* User Icon Styling */
+.login-icon-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.user-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Login Dropdown */
+.login-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 1rem;
+  z-index: 1200;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.login-left,
+.login-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.platform-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.platform-icons li {
+  list-style: none;
+}
+
+.platform-icons img {
+  width: 30px;
+  height: 30px;
+}
+
 /* Dropdown Styling */
 .pricing-dropdown-wrapper {
   position: relative;
@@ -116,28 +170,53 @@
   background-color: #f9f9f9;
   transform: translateY(-3px);
 }
+.login-left{
+  text-decoration: none;
+
+}
+
+.login-left,
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: center; */
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Trusted Devices Button */
+.trusted-device-btn {
+  background: #28a745;
+  border: none;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.trusted-device-btn:hover {
+  background: #218838;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trusted-device-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5);
+}
 
 /* Call-to-Action Buttons */
 .cta-buttons {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.login-btn {
-  background: none;
-  border: 2px solid #007bff;
-  color: #007bff;
-  padding: 0.5rem 1.2rem;
-  border-radius: 5px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.login-btn:hover {
-  background: #007bff;
-  color: white;
 }
 
 .signup-btn {
@@ -178,3 +257,5 @@
     width: 100%;
   }
 }
+
+

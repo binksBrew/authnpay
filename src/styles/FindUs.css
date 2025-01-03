@@ -15,7 +15,7 @@
 .find-us-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem; /* Adjusted gap for responsiveness */
+  gap: 9rem; /* Adjusted gap for responsiveness */
 }
 
 .form-section {
@@ -44,7 +44,7 @@
 
 input,
 textarea {
-  width: 100%;
+  width: 95%;
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #ddd;
@@ -72,8 +72,16 @@ textarea {
   color: #666;
 }
 
+.form-checkbox input[type="checkbox"] {
+  margin: 0; /* Remove default margin from the checkbox */
+  width: 16px; /* Optional: Adjust checkbox size */
+  height: 16px; /* Optional: Adjust checkbox size */
+}
+
+
 .form-checkbox label {
   line-height: 1.4;
+  margin: 0;
 }
 
 .send-message-btn {
