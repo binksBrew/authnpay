@@ -1,0 +1,170 @@
+/* Wrapper for overall spacing */
+.integrate-now-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7faff; /* Light background */
+    padding: 4rem 1rem;
+  }
+  
+  /* Main Container */
+  .integrate-now-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px; /* Adjusted width for the layout */
+    width: 100%;
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Increased shadow for a premium look */
+    gap: 3rem; /* Added gap between the sections */
+  }
+  
+  /* Left Section: Code Box */
+  .integrate-now-code {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #f9f9f9;
+    border-radius: 12px; /* Rounded corners */
+    padding: 2rem; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .code-header {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .circle.red {
+    background: #ff605c;
+  }
+  
+  .circle.yellow {
+    background: #ffbd44;
+  }
+  
+  .circle.green {
+    background: #00ca4e;
+  }
+  
+  .code-box {
+    font-family: "Courier New", Courier, monospace;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px; /* Rounded edges for the code box */
+    color: #333;
+    font-size: 1rem; /* Larger text for readability */
+    white-space: pre-wrap;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
+  .documentation-btn {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem; /* Adjusted padding for a balanced look */
+    border-radius: 6px;
+    font-size: 1rem; /* Unified font size */
+    font-weight: bold; /* Enhanced emphasis */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .documentation-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px); /* Slight hover lift */
+  }
+  
+  /* Right Section: Content */
+  .integrate-now-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+  }
+  
+  .integrate-now-content h4 {
+    font-size: 0.9rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .integrate-now-content h2 {
+    font-size: 1.8rem; /* Slightly larger heading */
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .integrate-now-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem; /* Increased spacing for readability */
+    line-height: 1.5;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem; /* Adjusted spacing */
+  }
+  
+  .icons img {
+    max-width: 10%;
+    margin-left: 2rem;
+    height: auto;
+    filter: grayscale(100%); /* Keep the icons consistent */
+  }
+  
+  /* Integrate Now Button */
+  .integrate-btn {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem; /* Adjusted padding */
+    border-radius: 6px;
+    font-size: 1rem; /* Unified font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .integrate-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px); /* Slight hover lift */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .integrate-now-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem;
+      gap: 1.5rem;
+    }
+  
+    .integrate-now-code,
+    .integrate-now-content {
+      width: 100%;
+    }
+  
+    .icons img {
+      max-width: 80%; /* Adjust icon size for smaller screens */
+    }
+  }
+  

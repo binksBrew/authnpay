@@ -1,0 +1,123 @@
+/* Features Section */
+.features-section {
+    padding: 5rem 2rem;
+    background: #f7faff;
+    text-align: center;
+}
+
+/* Section Header */
+.features-header h4 {
+    color: #007bff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.features-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.features-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    align-items: stretch; /* Ensures all cards align and stretch evenly */
+}
+
+/* Feature Card */
+.feature-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 400px; /* Set a uniform height */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1rem 0 0.5rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+    flex-grow: 1; /* Ensures consistent spacing between content and bottom of the card */
+}
+
+/* Image Styling */
+.feature-image {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    height: 200px; /* Uniform image height */
+}
+
+/* Horizontal Image Specifics */
+.feature-card.horizontal .feature-image {
+    height: 180px;
+}
+
+/* Vertical Image Specifics */
+.feature-card.vertical .feature-image {
+    height: 180px; /* Keep it uniform for consistency */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-header h2 {
+        font-size: 2rem;
+    }
+
+    .features-header p {
+        font-size: 1rem;
+    }
+
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    .features-grid {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .features-header p {
+        font-size: 0.9rem;
+    }
+}

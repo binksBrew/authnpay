@@ -43,7 +43,7 @@
 
 .nav-links a:hover {
   color: #007bff;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .nav-links a.active-link {
@@ -259,3 +259,69 @@
 }
 
 
+
+/* Services Dropdown */
+.services-dropdown-wrapper {
+  position: relative;
+  z-index: 1100;
+}
+
+.services-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.services-link:hover {
+  color: #007bff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  gap: 1rem;
+  z-index: 1200;
+  flex-wrap: wrap;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+.dropdown-content.show {
+  display: flex;
+}
+
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  width: 120px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-item img {
+  max-width: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-item h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dropdown-item:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-2px);
+}

@@ -25,7 +25,7 @@
   }
   
   .download-btn img {
-    width: 80px;
+    width: 50px;
     height: auto;
     transition: transform 0.3s ease;
   }
@@ -81,11 +81,14 @@
     font-size: 1rem;
     color: #555; /* Slightly lighter text */
     margin-top: 0.5rem;
-    display: none; /* Initially hidden */
+    max-height: 0; /* Collapsed initially */
+    overflow: hidden; /* Hide content outside max-height */
+    transition: max-height 0.3s ease; /* Smooth transition for height */
   }
   
   /* Show FAQ Answer */
   .faq-item.active .faq-answer {
     display: block; /* Show answer when active */
+    max-height: 300px; /* Set a reasonable height limit */
   }
   

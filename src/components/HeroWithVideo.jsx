@@ -91,7 +91,7 @@ const HeroWithVideo = () => {
 
   return (
     <>
-      {/* Intro Section */}
+      {/* Intro Section
       <section className="intro-section">
         <div className="intro-container">
           <div className="intro-left">
@@ -113,7 +113,7 @@ const HeroWithVideo = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Hero Section with Video */}
       <section className="hero-with-video">
