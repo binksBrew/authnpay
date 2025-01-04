@@ -35,7 +35,7 @@ function App() {
             element={
               <>
                 <HeroWithVideo openSignupPopup={openSignupPopup} />
-                <JoinUs />
+                <JoinUs openSignupPopup={openSignupPopup} />
                 <Compliance />
                 <WeAreOnline />
                 <TrustedCompanies />
@@ -47,8 +47,11 @@ function App() {
             }
           />
           {/* Service Details Route */}
-          <Route path="/services/:serviceId" element={<ServiceDetail />} />
-          <Route path="/services/:serviceId/pricing" element={<Price />} />
+          {/* <Route path="/services/:serviceId" element={<ServiceDetail />} /> */}
+          <Route path="/services/:serviceId" element={<ServiceDetail openSignupPopup={openSignupPopup} />}/>
+          {/* <Route path="/services/:serviceId/pricing" element={<Price />} /> */}
+          <Route path="/services/:serviceId/pricing" element={<Price openSignupPopup={openSignupPopup} />}/>
+
 
           {/* Other Routes */}
           <Route path="/livedemo" element={<LiveDemo />} />
