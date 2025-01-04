@@ -1,110 +1,64 @@
 .we-are-online {
-    padding: 4rem 2rem; /* Increased padding for more space */
-    background: #f8f9fa;
-    text-align: center;
-    margin: 4rem auto; /* Adds margin above and below the section */
-    max-width: 90%; /* Centers the section and limits the width */
-    border-radius: 12px; /* Adds slight rounding to the edges */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for better aesthetics */
-  }
-  
-  .compliance-section {
-    margin-bottom: 6rem; /* Increased spacing for separation */
-  }
-  
-  .compliance-section h2 {
-    font-size: 1rem;
-    color: #007bff;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem; /* Increased spacing below the heading */
-  }
-  
-  .compliance-section h3 {
-    font-size: 2rem; /* Slightly larger for better readability */
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 1.5rem; /* Increased spacing below the subheading */
-  }
-  
-  .compliance-section p {
-    font-size: 1.2rem; /* Slightly larger for better readability */
-    color: #666;
-    max-width: 700px; /* Increased width for better readability */
-    margin: 0 auto 3rem auto; /* Adjusted margin for better spacing */
-  }
-  
-  .certifications {
-    display: flex;
-    justify-content: center;
-    gap: 3rem; /* Increased gap for better alignment */
-  }
-  
-  .certifications img {
-    width: 100px; /* Slightly larger icons */
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    background: #e6e6e6;
-    padding: 0.75rem; /* Increased padding for better spacing */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
-  }
-  
-  .online-section {
-    margin-top: 6rem; /* Increased spacing above */
-    padding-top: 4rem; /* Added padding to balance */
-    border-top: 1px solid #ddd; /* Subtle separation between sections */
-  }
-  
-  .online-section .icon {
-    width: 120px; /* Larger icon for emphasis */
-    height: 120px;
-    margin-bottom: 1.5rem; /* Increased spacing below the icon */
-  }
-  
-  .online-section h3 {
-    font-size: 2rem; /* Increased font size for better emphasis */
-    color: #333;
-    margin-bottom: 1.5rem; /* Increased spacing below the heading */
-  }
-  
-  .online-section p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 3rem; /* Increased spacing below the paragraph */
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem; /* Increased gap between buttons */
-  }
-  
-  .btn {
-    padding: 0.85rem 1.75rem; /* Increased button size */
-    font-size: 1.1rem; /* Larger text */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-  
-  .demo-btn {
-    background: #007bff;
-    color: white;
-  }
-  
-  .demo-btn:hover {
-    background: #0056b3;
-    transform: translateY(-2px); /* Adds a hover lift effect */
-  }
-  
-  .whatsapp-btn {
-    background: #25d366;
-    color: white;
-  }
-  
-  .whatsapp-btn:hover {
-    background: #1da851;
-    transform: translateY(-2px); /* Adds a hover lift effect */
-  }
-  
+  padding: 2rem 2rem;
+  background: #f8f9fa;
+  /* background: linear-gradient(135deg, #3b0066, #0057b7); */
+  /* background: linear-gradient(135deg, #2d005c, #003e9b, #007bff); */
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.online-section .icon {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1.5rem;
+}
+
+.online-section h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.online-section p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 0.85rem 1.75rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.demo-btn {
+  background: #007bff;
+  color: white;
+}
+
+.demo-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  background: #1da851;
+  transform: translateY(-2px);
+}

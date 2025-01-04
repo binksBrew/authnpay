@@ -271,6 +271,8 @@ import FAQ from "./components/FAQ";
 import IntegrateNow from "./components/IntegrateNow";
 import FeaturesSection from "./components/FeaturesSection";
 import Support from "./components/Support";
+import Compliance from "./components/Compliance";
+
 
 function App() {
   const [showSignup, setShowSignup] = useState(false);
@@ -290,6 +292,7 @@ function App() {
               <>
                 <HeroWithVideo openSignupPopup={openSignupPopup} />
                 <JoinUs />
+                <Compliance />
                 <WeAreOnline />
                 <TrustedCompanies />
                 <IntegrateNow />
@@ -310,6 +313,8 @@ function App() {
           <Route path="/integratenow" element={<IntegrateNow />} />
           <Route path="/featuressection" element={<FeaturesSection />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/compliance" element={<Compliance />} />
+
         </Routes>
 
         <Footer />

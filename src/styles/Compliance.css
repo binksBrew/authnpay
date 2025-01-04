@@ -1,0 +1,56 @@
+.compliance-section {
+    padding: 4rem 2rem;
+    /* background: #ffffff; */
+  background: linear-gradient(135deg, #2d005c, #003e9b, #007bff);
+
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 90%;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .compliance-section h2 {
+    font-size: 1rem;
+    /* color: #007bff; */
+    color: white;
+    opacity: 0.8;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  
+  .compliance-section h3 {
+    font-size: 2rem;
+    /* color: #333; */
+    color: white;
+
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .compliance-section p {
+    font-size: 1.2rem;
+    /* color: #666; */
+    color: white;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+  }
+  
+  .certifications {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .certifications img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #e6e6e6;
+    background: whitesmoke;
+    padding: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
