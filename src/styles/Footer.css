@@ -154,3 +154,25 @@
   object-fit: cover;
   display: block;
 }
+
+
+/* Logo Container in Footer */
+.footer-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the logo image and text */
+  margin-bottom: 10px; /* Add spacing below the logo */
+}
+
+.footer-logo-img {
+  width: 50px; /* Adjust the size of the logo image */
+  height: 50px;
+  border-radius: 50%; /* Make the logo circular */
+  object-fit: cover; /* Ensure the logo scales properly */
+}
+
+.footer-logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #004a99; /* Same dark blue as in the Header */
+}

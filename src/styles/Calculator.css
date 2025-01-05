@@ -1,0 +1,161 @@
+.calculator-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .calculator-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .calculator-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .calculator-info p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .get-started-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #004a99;
+  }
+  
+  .calculator-box {
+    flex: 1;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .country-select {
+    margin-bottom: 2rem;
+  }
+  
+  .country-select label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .country-select select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .sliders {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .slider {
+    margin-bottom: 1.5rem;
+  }
+  
+  .slider label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .slider input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .summary {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 0.5rem;
+    text-align: left;
+  }
+  
+  .summary div {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .summary div span:last-child {
+    font-weight: bold;
+  }
+
+  .summary span{
+    margin-right: 0.7rem;
+  }
+  
+
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .calculator-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .calculator-info,
+    .calculator-box {
+      width: 100%;
+    }
+  
+    .calculator-info h2 {
+      font-size: 1.8rem;
+    }
+  
+    .calculator-info p {
+      font-size: 1rem;
+    }
+  
+    .get-started-btn {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .calculator-info h2 {
+      font-size: 1.5rem;
+    }
+  
+    .calculator-info p {
+      font-size: 0.9rem;
+    }
+  
+    .get-started-btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .sliders .slider label {
+      font-size: 0.9rem;
+    }
+  
+    .summary div {
+      font-size: 0.9rem;
+    }
+  }

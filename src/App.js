@@ -52,6 +52,7 @@ function App() {
           {/* <Route path="/services/:serviceId/pricing" element={<Price />} /> */}
           <Route path="/services/:serviceId/pricing" element={<Price openSignupPopup={openSignupPopup} />}/>
 
+          services/authentication-user-onboarding/pricing
 
           {/* Other Routes */}
           <Route path="/livedemo" element={<LiveDemo />} />

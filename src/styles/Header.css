@@ -27,6 +27,30 @@
   color: #0056b3;
 }
 
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between logo image and text */
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #004a99; /* Dark blue text color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.auth-logo {
+  width: 50px; /* Adjust size of the logo image */
+  height: 50px;
+  border-radius: 50%; /* Make the logo circular */
+  object-fit: cover; /* Ensure the logo scales properly */
+}
+
+
 /* Navigation Links */
 .nav-links {
   display: flex;
