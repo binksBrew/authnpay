@@ -110,6 +110,74 @@
   }
   
 
+  .calculator-box select {
+    appearance: none; /* Hides default arrow in most browsers */
+    -webkit-appearance: none; /* Hides arrow in Safari */
+    -moz-appearance: none; /* Hides arrow in Firefox */
+    padding-right: 30px; /* Space for the custom arrow */
+    padding: 10px; /* General padding for dropdown */
+    font-size: 1rem;
+    border: 1px solid #ddd; /* Border for dropdown */
+    border-radius: 8px; /* Rounded corners */
+    outline: none;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="%23333"/></svg>')
+        no-repeat right 10px center; /* Custom arrow */
+    background-color: #fff; /* Dropdown background color */
+    background-size: 10px 6px; /* Size of the arrow */
+    color: #333; /* Text color */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover and Focus States */
+.calculator-box select:hover,
+.calculator-box select:focus {
+    border-color: #007bff; /* Highlight border on hover or focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Subtle blue shadow */
+}
+
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: center;
+    padding: 1.5rem;
+    border: 1px solid #ddd; /* Add a border to the box */
+    border-radius: 8px; /* Rounded corners for the box */
+    /* background-color: #f9f9f9; Light grey background for contrast */
+    background-color: #fff; /* Light grey background for contrast */
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 300px; /* Limit the width of the box */
+    margin: 2rem auto 0; /* Center the box horizontally */
+}
+
+.summary div {
+    display: flex;
+    justify-content: space-between; /* Space between the label and value */
+    width: 100%; /* Ensure the content spans the box */
+    margin-bottom: 1rem; /* Add spacing between rows */
+    font-size: 1rem; /* Adjust text size */
+    font-weight: bold; /* Bold text for emphasis */
+    color: #333; /* Dark text for readability */
+}
+
+.summary div:last-child {
+    margin-bottom: 0; /* Remove margin from the last row */
+}
+
+.summary span:first-child {
+    color: #007bff; /* Primary blue for the label */
+}
+
+.summary span:last-child {
+    font-weight: bold;
+    color: #333; /* Keep the value in a contrasting color */
+}
+
+
+
 
   /* Responsive Design */
 @media (max-width: 768px) {

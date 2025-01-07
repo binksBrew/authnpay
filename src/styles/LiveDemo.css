@@ -111,6 +111,16 @@
     border-radius: 5px;
     font-size: 1rem;
 }
+.form-group select {
+    appearance: none; /* Hides default arrow in most browsers */
+    -webkit-appearance: none; /* Hides arrow in Safari */
+    -moz-appearance: none; /* Hides arrow in Firefox */
+    padding-right: 30px; /* Add padding to make space for the arrow */
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path d="M0 0h10L5 6z" fill="%23333"/></svg>')
+        no-repeat right 10px center; /* Custom arrow */
+    background-size: 10px 6px; /* Size of the arrow */
+}
+
 
 .form-group input:focus,
 .form-group select:focus {

@@ -14,71 +14,66 @@
 //         title: 'Authentication / User Onboarding',
 //         description: 'Advanced encryption and security protocols to streamline onboarding.',
 //         img: authIcon,
-//         detailedInfo: `
-//             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus justo urna, sed tincidunt purus pharetra vel. Cras viverra metus felis, sit amet iaculis nibh molestie sed. Sed a faucibus quam. Curabitur imperdiet dolor at ipsum fringilla hendrerit. Sed non ex ex. Morbi et ornare augue, at feugiat massa. Integer fringilla rutrum nunc non tempus. Praesent at molestie ligula. Proin vel aliquet ipsum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean in lacus sed ligula gravida commodo. Nulla nec neque tempor, pulvinar felis in, luctus lacus. Ut nec augue vitae urna vehicula congue vitae a justo. Proin urna risus, accumsan id fermentum et, pretium nec enim. Nam ac libero nec felis bibendum imperdiet. Phasellus rhoncus elementum lacus, at euismod lorem molestie quis.
-
-// In hac habitasse platea dictumst. Maecenas consectetur, dui quis tristique fermentum, mauris lorem interdum sem, id aliquam sem nibh eget metus. Phasellus id sem accumsan, lobortis eros quis, elementum sem. Sed a augue ac magna feugiat pharetra. Sed a lorem eleifend, fringilla libero mattis, rhoncus ex. Mauris eu dolor id quam luctus ornare. Duis tortor ante, tincidunt et rutrum nec, pellentesque in magna. Phasellus finibus, ipsum non fringilla dictum, ipsum turpis faucibus leo, vel tincidunt ex ante non libero. Nullam scelerisque sapien ut urna imperdiet accumsan.
-
-// Nulla nec sapien a nisi sodales porttitor. Nullam pulvinar, leo non interdum finibus, ex tortor lobortis metus, ac tincidunt sapien libero quis lacus. Vivamus auctor magna dolor, non posuere justo ultricies et. Nunc dapibus quis dui sed aliquet. Mauris faucibus felis non ligula venenatis pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed fringilla ex massa, et maximus lacus accumsan ac. Sed eget arcu iaculis, sollicitudin est vel, mattis nisi. Sed et aliquet nulla. Quisque imperdiet mauris vel efficitur ultricies.
-
-// Quisque efficitur euismod ex convallis bibendum. Praesent nec congue purus. Nulla blandit dui quis sapien varius dignissim vitae quis nisi. Sed eu ipsum vitae turpis convallis ultricies viverra efficitur orci. Morbi accumsan semper purus. Suspendisse egestas nulla nec luctus porta. Nam nec nulla et tortor pretium consectetur in lacinia risus. Fusce at maximus diam. In ipsum ipsum, fermentum ut egestas quis, vestibulum id eros. Mauris lobortis neque sit amet felis mollis cursus.
-//         `,
+//         keyPoints: [
+//             "Nearly perfect 99% success rate for hassle-free onboarding",
+//             "Premium security powered by biometrics and multi-factor authentication",
+//             "Enables authentication through multiple channels",
+//             "Pay-per-growth pricing approach"
+//         ],
 //         pricingInfo: 'Contact us for pricing details tailored to your needs.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
 //     {
 //         id: 'net-banking-auth',
 //         title: 'Net Banking Auth',
-//         description: 'Secure and seamless authentication for net banking users.',
+//         description: 'Easy, secure authentication for net banking users',
 //         img: netBankingAuthIcon,
-//         detailedInfo: `
-//             Our Net Banking Auth service provides secure and seamless user authentication.
-//             Integrate easily with existing systems and enhance trust with your customers.
-//         `,
+//         keyPoints: [
+//             "Quick, user-friendly, and trustworthy",
+//             "Easy connection with existing platforms",
+//             "Aligned with worldwide banking standard",
+//             "24/7 helpdesk and compliance commitment"
+//         ],
 //         pricingInfo: 'Flexible pricing based on user volume.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
 //     {
 //         id: 'net-banking-payment-auth',
 //         title: 'Net Banking Payment Auth',
-//         description: 'Effortless and secure payment authentication for net banking transactions.',
+//         description: 'Simple, secure payment authentication for digital banking transaction',
 //         img: netBankingPaymentAuthIcon,
-//         detailedInfo: `
-//             Simplify net banking payments with our secure authentication service.
-//             Reduce friction and ensure compliance with regulatory standards.
-//         `,
+//         keyPoints: [
+//             "Provides reliable payment security",
+//             "Improves payment ease",
+//             "Conforms to worldwide standards",
+//             "Quick and easy connectivity with banking platforms"
+//         ],
 //         pricingInfo: 'Subscription plans available based on transaction volume.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
 //     {
 //         id: 'payment-wallet-auth',
 //         title: 'Payment Wallet Auth',
-//         description: 'Enhanced security for wallet-based transactions.',
+//         description: 'Improved protection for wallet-based transactions',
 //         img: walletAuthIcon,
-//         detailedInfo: `
-//             Wallet-based transactions are secured with state-of-the-art encryption.
-//             Your users will enjoy a seamless and safe experience every time.
-//         `,
+//         keyPoints: [
+//             "Strong encryption for secure wallet transactions",
+//             "Integrates with well-known wallet platforms",
+//             "Simple authentication flow",
+//             "Flexible pricing options for businesses"
+//         ],
 //         pricingInfo: 'Competitive pricing options for businesses of all sizes.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
@@ -87,91 +82,89 @@
 //         title: 'Payment Gateway',
 //         description: 'Comprehensive support for payments via net banking, cards, UPI, wallets, and more.',
 //         img: paymentGatewayIcon,
-//         detailedInfo: `
-//             Our Payment Gateway supports a wide range of payment options. 
-//             From cards to wallets to UPI, we ensure fast and reliable payment solutions.
-//         `,
+//         keyPoints: [
+//             "Supports multiple payment options",
+//             "Fast and reliable payment processing",
+//             "Scalable for small to large businesses",
+//             "Custom pricing tailored to transaction needs"
+//         ],
 //         pricingInfo: 'Custom pricing tailored to your transaction needs.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
 //     {
 //         id: 'digital-signature',
 //         title: 'Digital Signature',
-//         description: 'Facilitate secure and legally binding digital document signing.',
+//         description: 'Enable safe and legally valid digital document signing',
 //         img: digitalSignatureIcon,
-//         detailedInfo: `
-//             Sign documents digitally with ease and ensure legal compliance. 
-//             Our service supports integration with major document management systems.
-//         `,
+//         keyPoints: [
+//             "Legally recognized e-signatures",
+//             "Integrates with major document management frameworks",
+//             "High-level encryption for protected signing",
+//             "Scalable and affordable pricing for every organization"
+//         ],
 //         pricingInfo: 'Affordable plans for individuals and enterprises.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
 //     {
 //         id: 'digi-locker',
 //         title: 'Digi Locker',
-//         description: 'Securely store and access your digital documents anytime.',
+//         description: 'Keep your documents safe and access them anytime',
 //         img: digiLockerIcon,
-//         detailedInfo: `
-//             Store, access, and share your documents securely using our Digi Locker service.
-//             Designed to provide maximum convenience with robust security measures.
-//         `,
+//         keyPoints: [
+//             "Safe and encrypted storage for documents",
+//             "Accessible 24/7, from any place",
+//             "Simplified interface for user convenience",
+//             "Compliance with data protection protocols"
+//         ],
 //         pricingInfo: 'Monthly and annual plans available.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
 //     {
 //         id: 'kyc',
 //         title: 'KYC',
-//         description: 'Comprehensive KYC solutions, including Yes/No KYC, Full KYC, and Aadhar-based KYC.',
+//         description: 'All-in-one KYC services, including Basic Yes/NO KYC, Full KYC, and Aadhar-linked verification',
 //         img: kycIcon,
-//         detailedInfo: `
-//             Ensure compliance and security with our end-to-end KYC solutions.
-//             Our offerings include Yes/No KYC, Full KYC, and Aadhaar-based verification.
-//         `,
+//         keyPoints: [
+//             "Facilitates Yes/No KYC, Full KYC, and Aadhaar-linked KYC",
+//             "Adhere to regulatory guidelines ",
+//             "Ensure reliable and protected verification.",
+//             "Scalable business solution."
+//         ],
 //         pricingInfo: 'Flexible pricing for businesses and institutions.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
 //     {
 //         id: 'user-verification',
 //         title: 'User Verification',
-//         description: 'Reliable and efficient user identity verification services.',
+//         description: 'Trusted and optimized identity verification services',
 //         img: userVerificationIcon,
-//         detailedInfo: `
-//             Verify user identities with precision and reliability.
-//             Our system ensures accuracy and reduces fraud risk significantly.
-//         `,
+//         keyPoints: [
+//             "Secure and accurate identity verification",
+//             "Anti-fraud measures and compliance management",
+//             "Supports a variety of industries and business needs",
+//             "Customizable solutions for business of any size"
+//         ],
 //         pricingInfo: 'Affordable plans to suit your user verification needs.',
 //         pricingTable: [
 //             { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-//             { range: 'Next 1000 auth (500-1500)', whatsapp: '₹0.28', sms: '₹0.19', email: '₹0.09', biometric: '₹0.49' },
-//             { range: 'Next 2000 auth (1500-3500)', whatsapp: '₹0.24', sms: '₹0.17', email: '₹0.08', biometric: '₹0.43' },
 //             { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
 //         ],
 //     },
 // ];
 
 // export default servicesData;
-
-
 
 
 
@@ -201,66 +194,74 @@ const servicesData = [
         description: 'Advanced encryption and security protocols to streamline onboarding.',
         img: authIcon,
         keyPoints: [
-            "98% success rate for seamless onboarding.",
-            "Best-in-class security with biometric and MFA.",
-            "Supports multiple channels for authentication.",
-            "Pay-as-you-grow pricing model."
+            "Nearly perfect 99% success rate for hassle-free onboarding",
+            "Premium security powered by biometrics and multi-factor authentication",
+            "Enables authentication through multiple channels",
+            "Pay-per-growth pricing approach"
         ],
         pricingInfo: 'Contact us for pricing details tailored to your needs.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
     {
         id: 'net-banking-auth',
         title: 'Net Banking Auth',
-        description: 'Secure and seamless authentication for net banking users.',
+        description: 'Easy, secure authentication for net banking users.',
         img: netBankingAuthIcon,
         keyPoints: [
-            "Seamless integration with existing systems.",
-            "Enhanced security for banking authentication.",
-            "Supports global banking standards.",
-            "24/7 customer support and compliance."
+            "Quick, user-friendly, and trustworthy",
+            "Easy connection with existing platforms",
+            "Aligned with worldwide banking standard",
+            "24/7 helpdesk and compliance commitment"
         ],
         pricingInfo: 'Flexible pricing based on user volume.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
     {
         id: 'net-banking-payment-auth',
         title: 'Net Banking Payment Auth',
-        description: 'Effortless and secure payment authentication for net banking transactions.',
+        description: 'Simple, secure payment authentication for digital banking transactions.',
         img: netBankingPaymentAuthIcon,
         keyPoints: [
-            "Ensures secure payment authentication.",
-            "Reduces transaction friction.",
-            "Complies with international standards.",
-            "Easy integration with banking platforms."
+            "Provides reliable payment security",
+            "Improves payment ease",
+            "Conforms to worldwide standards",
+            "Quick and easy connectivity with banking platforms"
         ],
         pricingInfo: 'Subscription plans available based on transaction volume.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
     {
         id: 'payment-wallet-auth',
         title: 'Payment Wallet Auth',
-        description: 'Enhanced security for wallet-based transactions.',
+        description: 'Improved protection for wallet-based transactions.',
         img: walletAuthIcon,
         keyPoints: [
-            "Secure wallet transactions with encryption.",
-            "Supports popular wallet services.",
-            "User-friendly authentication process.",
-            "Customizable pricing for businesses."
+            "Strong encryption for secure wallet transactions",
+            "Integrates with well-known wallet platforms",
+            "Simple authentication flow",
+            "Flexible pricing options for businesses"
         ],
         pricingInfo: 'Competitive pricing options for businesses of all sizes.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
     {
@@ -269,83 +270,93 @@ const servicesData = [
         description: 'Comprehensive support for payments via net banking, cards, UPI, wallets, and more.',
         img: paymentGatewayIcon,
         keyPoints: [
-            "Supports multiple payment options.",
-            "Fast and reliable payment processing.",
-            "Scalable for small to large businesses.",
-            "Custom pricing tailored to transaction needs."
+            "Supports multiple payment options",
+            "Fast and reliable payment processing",
+            "Scalable for small to large businesses",
+            "Custom pricing tailored to transaction needs"
         ],
         pricingInfo: 'Custom pricing tailored to your transaction needs.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
     {
         id: 'digital-signature',
         title: 'Digital Signature',
-        description: 'Facilitate secure and legally binding digital document signing.',
+        description: 'Enable safe and legally valid digital document signing.',
         img: digitalSignatureIcon,
         keyPoints: [
-            "Legally binding digital document signing.",
-            "Integration with major document management systems.",
-            "Robust encryption for secure signing.",
-            "Affordable plans for all sizes of organizations."
+            "Legally recognized e-signatures",
+            "Integrates with major document management frameworks",
+            "High-level encryption for protected signing",
+            "Scalable and affordable pricing for every organization"
         ],
         pricingInfo: 'Affordable plans for individuals and enterprises.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
     {
         id: 'digi-locker',
         title: 'Digi Locker',
-        description: 'Securely store and access your digital documents anytime.',
+        description: 'Keep your documents safe and access them anytime.',
         img: digiLockerIcon,
         keyPoints: [
-            "Secure storage for digital documents.",
-            "Accessible anytime, anywhere.",
-            "User-friendly interface for ease of use.",
-            "Compliance with digital security standards."
+            "Safe and encrypted storage for documents",
+            "Accessible 24/7, from any place",
+            "Simplified interface for user convenience",
+            "Compliance with data protection protocols"
         ],
         pricingInfo: 'Monthly and annual plans available.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
     {
         id: 'kyc',
         title: 'KYC',
-        description: 'Comprehensive KYC solutions, including Yes/No KYC, Full KYC, and Aadhar-based KYC.',
+        description: 'All-in-one KYC services, including Basic Yes/NO KYC, Full KYC, and Aadhar-linked verification.',
         img: kycIcon,
         keyPoints: [
-            "Supports Yes/No KYC, Full KYC, and Aadhaar-based KYC.",
-            "Compliant with regulatory requirements.",
-            "Ensures accurate and secure verification.",
-            "Customizable solutions for businesses."
+            "Facilitates Yes/No KYC, Full KYC, and Aadhaar-linked KYC",
+            "Adhere to regulatory guidelines",
+            "Ensure reliable and protected verification",
+            "Scalable business solution"
         ],
         pricingInfo: 'Flexible pricing for businesses and institutions.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
     {
         id: 'user-verification',
         title: 'User Verification',
-        description: 'Reliable and efficient user identity verification services.',
+        description: 'Trusted and optimized identity verification services.',
         img: userVerificationIcon,
         keyPoints: [
-            "Reliable and precise identity verification.",
-            "Fraud prevention and compliance assurance.",
-            "Supports various industries and use cases.",
-            "Scalable solutions for all business sizes."
+            "Secure and accurate identity verification",
+            "Anti-fraud measures and compliance management",
+            "Supports a variety of industries and business needs",
+            "Customizable solutions for business of any size"
         ],
         pricingInfo: 'Affordable plans to suit your user verification needs.',
         pricingTable: [
-            { range: 'First 500 auth (0-500)', whatsapp: '₹0.31', sms: '₹0.21', email: '₹0.10', biometric: '₹0.56' },
-            { range: 'More than 3500 auth', whatsapp: '₹0.22', sms: '₹0.15', email: '₹0.07', biometric: '₹0.38' },
+            { range: 'First 500 auth (0-500)', core: '₹0.31', guard: '₹0.21', select: '₹0.10', faceKey: '₹0.56', access: '₹0.56' },
+            { range: 'Next 1000 auth (500-1500)', core: '₹0.28', guard: '₹0.19', select: '₹0.09', faceKey: '₹0.49', access: '₹0.49' },
+            { range: 'Next 2000 auth (1500-3500)', core: '₹0.24', guard: '₹0.17', select: '₹0.08', faceKey: '₹0.43', access: '₹0.43' },
+            { range: 'More than 3500 auth', core: '₹0.22', guard: '₹0.15', select: '₹0.07', faceKey: '₹0.38', access: '₹0.38' },
         ],
     },
 ];

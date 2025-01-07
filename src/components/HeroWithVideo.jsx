@@ -14,10 +14,9 @@ const HeroWithVideo = ({ openSignupPopup }) => {
         </video>
         <div className="hero-content">
           <p className="tagline">ALL-IN-ONE</p>
-          <h1>Smart Authentication Suite<br />for your App/Website</h1>
+          <h1>Advance Next-Gen (AI-Powered)<br />Authentication and Payment Suit</h1>
           <p className="description">
-            Sign in customers with WhatsApp, SMS, Email, and more with 98% conversion.
-          </p>
+          Sign in & Make Payment Without any OTP, PIN, Password, Username or any other Credentials          </p>
           <button className="cta-button" onClick={openSignupPopup}>
             Get Started
           </button>

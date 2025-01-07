@@ -12,12 +12,12 @@ const Compliance = () => {
 
   return (
     <section className="compliance-section">
-      <h2>COMPLIANCE & DATA SECURITY</h2>
-      <h3>The highest levels of compliance</h3>
+      <h2>COMPLIANCE & DATA SAFEGUARDING</h2>
+      <h3>Top-Tier Uncompromising Compliance Excellence</h3>
       <p>
-        We take data security incredibly seriously. We want you to trust us
-        and our systems, which is why we’ve sought external certification to
-        ensure our technology infrastructure and your data is kept secure.
+      Data security is at the heart of everything we do. We’ve sought
+independent certification to assure you that our systems and
+your data are fully secure.
       </p>
       <div className="certifications">
         <img src={tempImage} alt="GDPR" />

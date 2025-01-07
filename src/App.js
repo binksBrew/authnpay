@@ -17,6 +17,7 @@ import FeaturesSection from "./components/FeaturesSection";
 import Support from "./components/Support";
 import Compliance from "./components/Compliance";
 import SecurityCompliance from "./components/SecurityCompliance";
+import USAI from "./components/USAI";
 
 function App() {
   const [showSignup, setShowSignup] = useState(false);
@@ -63,6 +64,7 @@ function App() {
           <Route path="/support" element={<Support />} />
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/security-compliance" element={<SecurityCompliance />} />
+          <Route path="/usai" element={<USAI />} />
 
         </Routes>
 

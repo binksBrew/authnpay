@@ -3,16 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-
-
-
 
 .logo {
   font-size: 1.5rem;
@@ -47,8 +44,8 @@
 }
 
 .auth-logo {
-  width: 50px; /* Adjust size of the logo image */
-  height: 50px;
+  width: 70px; /* Adjust size of the logo image */
+  height: auto;
   border-radius: 50%; /* Make the logo circular */
   object-fit: cover; /* Ensure the logo scales properly */
 }
@@ -178,29 +175,47 @@
   text-decoration: none;
   color: #333;
   text-align: center;
-  width: 120px;
+  width: 140px !important;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  margin: 0.5rem 0;    /* Adjust margin between items */
 }
 
 .dropdown-item img {
-  max-width: 50px;
   margin-bottom: 0.5rem;
+  max-width: 70px; /* Adjust to desired size */
+  height: auto;    /* Maintain aspect ratio */
 }
 
 .dropdown-item h4 {
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-size: 0.5rem;
+  font-weight: normal;
   margin: 0;
 }
 
 .dropdown-item:hover {
-  background-color: #f9f9f9;
-  transform: translateY(-3px);
+  /* background-color: #f9f9f9;
+  transform: translateY(-3px); */
+  background-color: transparent; /* Reset background */
+  transform: none; /* Remove translation effect */
+  cursor: default;
 }
 .login-left{
   text-decoration: none;
 
 }
+
+.dropdown-content .dropdown-item h4 {
+  font-size: 0.9rem !important; /* Force change */
+  font-weight: normal !important;
+  margin: 0 !important;
+}
+
+.dropdown-content .dropdown-item img {
+  max-width: 60px !important;
+  height: auto !important;
+}
+
 
 .login-left,
 .login-right {
