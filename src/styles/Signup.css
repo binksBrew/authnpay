@@ -75,9 +75,21 @@
     z-index: 10;
 }
 
+.radio-item label {
+    font-size: 1rem !important;
+    color: #333 !important;
+    margin: 0 !important;
+}
+
+.radio-item input[type="radio"] {
+    margin: 0 !important;
+    vertical-align: middle !important;
+}
+
 .signup-form button:hover {
     background-color: #003370;
 }
+
 
 /* Responsive Styling */
 

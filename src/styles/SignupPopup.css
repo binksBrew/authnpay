@@ -1,176 +1,209 @@
 /* Popup Overlay */
 .signup-popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  /* Popup Container */
-  .signup-popup {
-    background: rgba(255, 255, 255, 1);
-    opacity: 0.95;
-    border-radius: 12px;
-    padding: 2rem;
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    position: relative;
-    transition: all 0.3s ease;
-    top: 3rem;
-    min-height: 300px;
-    /* height: 400px; Fixed height to prevent resizing */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+  padding: 1rem; /* Ensures proper spacing on smaller screens */
+}
+
+/* Popup Container */
+.signup-popup {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
   overflow-y: auto; /* Enables scrolling if content overflows */
+  max-height: 90vh; /* Ensures popup doesn't overflow vertically */
+  transition: all 0.3s ease;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
+
+/* Form Content */
+.signup-content h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.signup-content input,
+.signup-content textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signup-content textarea {
+  resize: none;
+}
+
+/* Radio Group Styling */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.radio-group input[type="radio"]:checked {
+  background-color: #007bff;
+  border-color: #0056b3;
+}
+
+.radio-group input[type="radio"]:checked::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* Navigation Buttons */
+.signup-navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end; /* Keeps Back on the left and Submit/Next on the right */
+  gap: 1rem;
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+.back-btn,
+.next-btn,
+.submit-btn {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-btn:hover,
+.next-btn:hover {
+  background: #0056b3;
+}
+
+.submit-btn {
+  background: #28a745;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .signup-popup {
+    width: 100%;
+    max-width: 95%;
+    padding: 1.5rem;
+    max-height: 85vh; /* Adjust height for smaller devices */
   }
-  
-  /* Close Button */
-  .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #555;
-    transition: color 0.3s ease;
-  }
-  
-  .close-btn:hover {
-    color: #ff0000;
-  }
-  
-  /* Form Content */
+
   .signup-content h2 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 1rem;
+    font-size: 1.2rem;
   }
-  
+
   .signup-content input,
   .signup-content textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    font-size: 0.9rem;
+  }
 
-  }
-  
-  .signup-content textarea {
-    resize: none;
-  }
-  
-  /* Radio Buttons */
-  .radio-group {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
   .radio-group label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1rem;
-    color: #333;
-    cursor: pointer;
+    font-size: 0.9rem;
   }
-  
-  .radio-group input[type="radio"] {
-    appearance: none;
-    width: 18px;
-    height: 18px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-  }
-  
-  .radio-group input[type="radio"]:checked {
-    background-color: #007bff;
-    border-color: #0056b3;
-  }
-  
-  .radio-group input[type="radio"]:checked::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-  }
-  
-  /* Navigation Buttons */
-  .signup-navigation {
-    margin-top: auto; /* Pushes buttons to the bottom of the popup */
-    display: flex;
-    justify-content: flex-end; /* Align "Back" to the left and "Next" to the right */
-    align-items: center; /* Ensures buttons are aligned vertically */
-    gap: 1rem; /* Keeps space between the buttons */
-    margin-bottom: 0; /* Remove any gap below the buttons */
-    padding-top: 2rem; /* Adjust space above the buttons to move them slightly lower */
-  }
-  
-  
-  .back-btn {
-    padding: 10px 20px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .back-btn:hover {
-    background: #0056b3;
-  }
-  
-  .next-btn {
-    padding: 10px 20px;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .next-btn:hover {
-    background: #0056b3;
-  }
-  
+
+  .back-btn,
+  .next-btn,
   .submit-btn {
-    padding: 10px 20px;
-    background: #28a745;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
-  
-  .submit-btn:hover {
-    background: #218838;
+}
+
+@media (max-width: 480px) {
+  .signup-popup {
+    max-width: 100%;
+    max-height: 90vh;
+    padding: 1rem;
   }
-  
+
+  .signup-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .radio-group label {
+    font-size: 0.8rem;
+  }
+
+  .back-btn,
+  .next-btn,
+  .submit-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
