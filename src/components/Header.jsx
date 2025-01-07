@@ -339,7 +339,7 @@ import "../styles/LoginDropdown.css";
 import servicesData from "./servicesData";
 import loginApp from "../assets/loginapp.png";
 import userIcon from "../assets/user.png";
-import logo from "../assets/auth-logo.jpg"; // Import the logo image
+import logo from "../assets/auth-logo.png";
 
 const Header = ({ openSignupPopup }) => {
   const [showPricingDropdown, setShowPricingDropdown] = useState(false);

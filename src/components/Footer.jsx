@@ -254,7 +254,7 @@ import React from "react";
 import "../styles/Footer.css";
 import androidIcon from "../assets/android.png"; // Android image
 import appleIcon from "../assets/apple.png"; // Apple image
-import logo from "../assets/auth-logo.jpg"; // Import the logo image
+import logo from "../assets/auth-logo.png"; // Import the logo image
 
 const Footer = () => {
   return (
