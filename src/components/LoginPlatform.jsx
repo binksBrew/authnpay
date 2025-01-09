@@ -1,24 +1,41 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/LoginPlatform.css";
 import platformGroups from "./platformGroupsData";
 
 const LoginPlatform = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
 
-  // Filter services dynamically based on search query
-  const filteredGroups = platformGroups.map((group) => ({
-    ...group,
-    services: group.services.filter((service) =>
-      service.name.toLowerCase().includes(searchQuery.toLowerCase())
-    ),
-  }));
+  // Alphabetically sort groups and services
+  const sortedPlatformGroups = platformGroups
+    .map((group) => ({
+      ...group,
+      services: group.services.sort((a, b) =>
+        a.name.localeCompare(b.name) // Sort services alphabetically
+      ),
+    }))
+    .sort((a, b) => a.groupName.localeCompare(b.groupName)); // Sort groups alphabetically
+
+  // Filter groups and services dynamically based on search query
+  const filteredGroups = sortedPlatformGroups.filter(
+    (group) =>
+      group.groupName.toLowerCase().includes(searchQuery.toLowerCase()) || // Check if group name matches query
+      group.services.some((service) =>
+        service.name.toLowerCase().includes(searchQuery.toLowerCase()) // Check if any service matches query
+      )
+  );
+
+  const handleServiceClick = () => {
+    navigate("/comingsoon"); // Navigates to the ComingSoon component
+  };
 
   return (
     <section className="login-platform">
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Search here"
+          placeholder="Search groups or services"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
@@ -31,7 +48,12 @@ const LoginPlatform = () => {
                 <h2 className="group-title">{group.groupName}</h2>
                 <div className="services-container">
                   {group.services.map((service, i) => (
-                    <div key={i} className="service">
+                    <div
+                      key={i}
+                      className="service"
+                      onClick={handleServiceClick}
+                      style={{ cursor: "pointer" }}
+                    >
                       <img
                         src={service.icon}
                         alt={service.name}

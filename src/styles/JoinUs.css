@@ -61,3 +61,69 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for the image */
   }
   
+
+
+
+
+
+
+
+  /* Responsive Design for Join Us Section */
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .join-us {
+    flex-direction: column; /* Stack content and image vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 2rem 1rem; /* Reduce padding for smaller screens */
+    margin: 2rem auto; /* Adjust margin for better spacing */
+  }
+
+  .join-us-content {
+    max-width: 100%; /* Allow content to take full width */
+    margin-right: 0; /* Remove right margin for stacked layout */
+    margin-bottom: 2rem; /* Add bottom margin for spacing with the image */
+  }
+
+  .join-us-content h2 {
+    font-size: 2rem; /* Reduce font size for headlines */
+    margin-bottom: 1rem; /* Adjust spacing */
+  }
+
+  .join-us-content p {
+    font-size: 0.9rem; /* Slightly reduce paragraph font size */
+  }
+
+  .join-us-image {
+    max-width: 100%; /* Allow image container to take full width */
+    justify-content: center; /* Center align the image */
+  }
+
+  .join-us-image img {
+    max-height: 250px; /* Reduce image height for smaller screens */
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  .join-us {
+    padding: 1rem; /* Further reduce padding for very small screens */
+  }
+
+  .join-us-content h2 {
+    font-size: 1.5rem; /* Further reduce headline size */
+  }
+
+  .join-us-content p {
+    font-size: 0.8rem; /* Reduce paragraph font size for better fit */
+  }
+
+  .join-us-image img {
+    max-height: 200px; /* Adjust image height */
+  }
+
+  .sign-up-btn {
+    padding: 0.6rem 1rem; /* Reduce button padding */
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+}

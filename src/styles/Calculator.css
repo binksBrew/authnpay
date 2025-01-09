@@ -97,61 +97,40 @@
     cursor: pointer;
   }
   
-  .summary {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    gap: 0.5rem;
-    text-align: left;
-  }
-  
-  .summary div {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .summary div span:last-child {
-    font-weight: bold;
-  }
-
-  .summary span{
-    margin-right: 0.7rem;
-  }
-  
   /* Summary Section */
 .summary {
-  display: grid; /* Grid layout for equal columns */
-  grid-template-columns: repeat(3, 1fr); /* Three equally spaced columns */
-  padding: 1rem;
-  border: 1px solid #ccc; /* Light gray border */
-  background-color: #fff; /* White background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
-  font-family: Arial, sans-serif; /* Ensure consistent font */
-  text-align: center; /* Center all text */
-  gap: 1rem; /* Add spacing between rows/columns */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-end; /* Align items to the right */
+  padding: 0; /* Remove padding */
+  border: none; /* Remove border */
+  background-color: transparent; /* Remove background */
+  font-family: Arial, sans-serif;
+  text-align: right; /* Align text to the right */
+  gap: 0.5rem; /* Add spacing between items */
 }
 
 /* Individual Items */
 .summary div {
   display: flex;
-  flex-direction: column; /* Stack label and value vertically */
-  align-items: center; /* Center-align text */
-  justify-content: center;
+  justify-content: space-between; /* Space between label and value */
+  width: 100%; /* Full width */
+  font-size: 1rem;
+  color: #333;
 }
 
 /* Labels (e.g., Total Auths/mo) */
 .summary div span:first-child {
-  font-size: 0.9rem; /* Smaller font for labels */
+  font-size: 1rem;
   color: #6c757d; /* Muted gray for labels */
+  margin-right: 1rem; /* Add space between label and value */
 }
 
-/* Values (e.g., ₹12000) */
+/* Values (e.g., ₹0) */
 .summary div span:last-child {
-  font-size: 1.4rem; /* Slightly larger font for values */
-  font-weight: bold; /* Emphasize numeric values */
-  color: #000; /* Strong black for contrast */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
 }
 
 
@@ -180,48 +159,6 @@
     border-color: #007bff; /* Highlight border on hover or focus */
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Subtle blue shadow */
 }
-
-
-.summary {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align text to the left */
-    justify-content: center;
-    padding: 1.5rem;
-    border: 1px solid #ddd; /* Add a border to the box */
-    border-radius: 8px; /* Rounded corners for the box */
-    /* background-color: #f9f9f9; Light grey background for contrast */
-    background-color: #fff; /* Light grey background for contrast */
-
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 300px; /* Limit the width of the box */
-    margin: 2rem auto 0; /* Center the box horizontally */
-}
-
-.summary div {
-    display: flex;
-    justify-content: space-between; /* Space between the label and value */
-    width: 100%; /* Ensure the content spans the box */
-    margin-bottom: 1rem; /* Add spacing between rows */
-    font-size: 1rem; /* Adjust text size */
-    font-weight: bold; /* Bold text for emphasis */
-    color: #333; /* Dark text for readability */
-}
-
-.summary div:last-child {
-    margin-bottom: 0; /* Remove margin from the last row */
-}
-
-.summary span:first-child {
-    color: #007bff; /* Primary blue for the label */
-}
-
-.summary span:last-child {
-    font-weight: bold;
-    color: #333; /* Keep the value in a contrasting color */
-}
-
-
 
 
   /* Responsive Design */

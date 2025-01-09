@@ -207,3 +207,113 @@
     padding: 6px 12px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ensure Popup Fits Within the Viewport */
+.signup-popup {
+  max-width: 90%; /* Adjust width for smaller screens */
+  max-height: 90vh; /* Ensure popup stays within viewport vertically */
+  overflow-y: auto; /* Add vertical scrolling if content overflows */
+  padding: 1.5rem; /* Adjust padding to fit within screen */
+  margin: 0 auto; /* Center the popup horizontally */
+  position: relative;
+  box-sizing: border-box; /* Include padding in dimensions */
+}
+
+/* Adjust Overlay for Better Spacing */
+.signup-popup-overlay {
+  padding: 5px; /* Ensure there's padding around the popup on smaller screens */
+  padding-left: 1px;
+  margin-top: 45%;
+  overflow-y: auto; /* Allow scrolling for smaller devices */
+  display: flex;
+  align-items: flex-start; /* Align popup to start vertically */
+}
+
+/* Ensure Buttons Stay Within Viewport */
+.signup-navigation {
+  margin-top: 10px;
+  padding: 10px 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* Input Fields */
+.signup-content input,
+.signup-content textarea {
+  width: 100%; /* Ensure input fields take full width */
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box; /* Include padding in dimensions */
+}
+
+/* Responsive Adjustments for Tablets */
+@media (max-width: 768px) {
+  .signup-popup {
+      width: 100%; /* Expand width to fill the screen */
+      max-width: 95%; /* Add padding for better readability */
+      padding: 1rem;
+      max-height: 85vh; /* Reduce height for smaller devices */
+  }
+
+  .signup-content h2 {
+      font-size: 1.2rem; /* Adjust heading size */
+  }
+
+  .signup-navigation {
+      padding: 8px 0; /* Adjust padding for smaller devices */
+  }
+
+  .back-btn,
+  .next-btn,
+  .submit-btn {
+      font-size: 0.9rem;
+      padding: 8px 12px; /* Adjust button padding */
+  }
+}
+
+/* Responsive Adjustments for Mobile Devices */
+@media (max-width: 480px) {
+  .signup-popup {
+      width: 100%; /* Full width for smaller devices */
+      max-height: 90vh; /* Ensure popup doesn't overflow vertically */
+      padding: 0.8rem; /* Reduce padding */
+  }
+
+  .signup-content h2 {
+      font-size: 1.1rem; /* Smaller font for mobile */
+  }
+
+  .signup-content input,
+  .signup-content textarea {
+      font-size: 0.9rem;
+      padding: 8px;
+  }
+
+  .back-btn,
+  .next-btn,
+  .submit-btn {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+  }
+
+  .radio-group label {
+      font-size: 0.8rem; /* Smaller font for radio labels */
+  }
+}

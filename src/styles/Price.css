@@ -354,3 +354,20 @@
     padding: 2px 3px;
   }
 }
+
+
+
+
+
+/* Responsive Table Scrolling */
+@media (max-width: 768px) {
+  .pricing-table-wrapper {
+    overflow-x: auto; /* Add horizontal scrolling for the table */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on mobile */
+  }
+
+  .pricing-table {
+    min-width: 600px; /* Ensure table maintains a scrollable width */
+    display: table; /* Keep table layout intact */
+  }
+}

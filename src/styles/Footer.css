@@ -176,3 +176,109 @@
   font-weight: bold;
   color: #004a99; /* Same dark blue as in the Header */
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 1.5rem; /* Reduce spacing between sections */
+    text-align: center; /* Center-align text for better layout on small screens */
+  }
+
+  .footer-section {
+    min-width: 100%; /* Ensure sections take full width */
+  }
+
+  .newsletter {
+    flex-direction: column; /* Stack input and button vertically */
+    align-items: stretch; /* Make input and button fill width */
+    gap: 1rem; /* Add spacing between input and button */
+  }
+
+  .newsletter input {
+    width: 100%; /* Make input field full-width */
+  }
+
+  .newsletter button {
+    width: 100%; /* Make button full-width */
+  }
+
+  .download-buttons {
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    justify-content: center; /* Center-align buttons */
+    gap: 1rem; /* Adjust spacing */
+  }
+
+  .download-btn img {
+    width: 80px; /* Adjust image size for smaller screens */
+  }
+
+  .footer-bottom {
+    flex-direction: column; /* Stack footer bottom items vertically */
+    align-items: center; /* Center-align items */
+    gap: 1rem; /* Add spacing between items */
+  }
+
+  .footer-bottom-left a {
+    margin-right: 0; /* Remove margin for better spacing */
+  }
+
+  .footer-bottom-right {
+    text-align: center; /* Center-align text */
+  }
+
+  .footer-logo-container {
+    justify-content: center; /* Center the logo container */
+    text-align: center;
+    flex-direction: column; /* Stack logo and text vertically */
+    gap: 0.5rem;
+  }
+
+  .footer-logo-img {
+    width: 40px; /* Reduce logo size */
+    height: 40px;
+  }
+
+  .footer-logo-text {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section h3 {
+    font-size: 1rem; /* Reduce heading size */
+  }
+
+  .footer-section p,
+  .footer-section ul li a {
+    font-size: 0.8rem; /* Adjust text size */
+  }
+
+  .newsletter input {
+    font-size: 0.85rem; /* Adjust input font size */
+    padding: 0.5rem; /* Reduce padding */
+  }
+
+  .newsletter button {
+    font-size: 0.9rem; /* Adjust button font size */
+    padding: 0.6rem 1rem; /* Reduce padding */
+  }
+
+  .download-btn img {
+    width: 60px; /* Further reduce button size */
+  }
+
+  .footer-bottom {
+    gap: 0.75rem; /* Reduce spacing */
+  }
+}

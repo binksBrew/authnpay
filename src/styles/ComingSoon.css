@@ -1,15 +1,25 @@
 /* Container */
 .coming-soon-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
     padding: 2rem;
-    background: linear-gradient(135deg, #2d005c, #003e9b, #007bff);
+    padding-top: 1rem;
+    /* background: linear-gradient(135deg, #2d005c, #003e9b, #007bff); */
+    background: linear-gradient(135deg, #003f5c, #1c6e8c, #71c7ec);
     color: #ffffff; /* White text for better contrast */
     font-family: Arial, sans-serif;
-    text-align: center;
+  }
+  
+  /* Left Content */
+  .coming-soon-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   /* Title */
@@ -32,7 +42,6 @@
     display: flex;
     gap: 1rem;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
   }
   
@@ -69,8 +78,78 @@
     transform: scale(0.95); /* Press effect */
   }
   
+  /* Right Image */
+  .coming-soon-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .coming-soon-image .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px; /* Rounded corners for a modern look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow for image */
+  }
+
+  /* Email Input Field */
+.email-input {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #1c6e8c; /* Border color matching the theme */
+    border-radius: 8px;
+    width: 250px;
+    max-width: 100%;
+    outline: none;
+    color: #003e9b; /* Text color matching the theme */
+    background-color: #f0f8ff; /* Light background for contrast */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.email-input:focus {
+    border-color: #007bff; /* Highlight on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Soft glow effect */
+}
+
+/* Notify Button */
+.notify-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #1c6e8c; /* Button background color */
+    color: #ffffff; /* White text for contrast */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.notify-button:hover {
+    background-color: #71c7ec; /* Lighter blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.notify-button:active {
+    background-color: #1a5276; /* Darker shade on click */
+    transform: scale(0.95); /* Pressed effect */
+}
+
+  
   /* Responsive Design */
   @media (max-width: 768px) {
+    .coming-soon-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+    }
+  
+    .coming-soon-content {
+      max-width: 100%;
+      padding: 1rem;
+    }
+  
     .coming-soon-title {
       font-size: 2.5rem;
     }
@@ -81,11 +160,37 @@
   
     .email-subscription {
       flex-direction: column;
-      gap: 1rem;
     }
   
     .email-input {
       width: 100%;
     }
+  
+    .coming-soon-image {
+      max-width: 90%;
+      margin-top: 1rem;
+    }
+    .email-subscription {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto; /* Center align the email subscription section */
+        max-width: 100%; /* Ensure it doesn't exceed the container width */
+        padding: 0 1rem; /* Add padding to prevent overflow */
+      }
+      
+      .email-input {
+        padding: 0.75rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        width: 100%; /* Make it responsive */
+        max-width: 400px; /* Set a maximum width to prevent it from stretching */
+        outline: none;
+        color: #333;
+        box-sizing: border-box; /* Include padding in width calculation */
+      }
   }
   

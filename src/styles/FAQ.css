@@ -92,3 +92,86 @@
     max-height: 300px; /* Set a reasonable height limit */
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive Design for FAQ Section */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .faq-section h2 {
+    font-size: 1.8rem; /* Reduce heading size */
+    margin-bottom: 1rem; /* Adjust margin */
+  }
+
+  .faq-item {
+    margin-bottom: 1rem; /* Reduce spacing between items */
+    padding-bottom: 0.75rem; /* Adjust padding */
+  }
+
+  .faq-question {
+    font-size: 1.1rem; /* Slightly reduce question text size */
+  }
+
+  .faq-answer {
+    font-size: 0.95rem; /* Adjust answer text size */
+    line-height: 1.5; /* Ensure good readability */
+  }
+
+  .faq-icon {
+    font-size: 1.3rem; /* Reduce icon size slightly */
+  }
+
+  .download-section p {
+    font-size: 1rem; /* Adjust text size */
+  }
+
+  .download-buttons {
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center; /* Center-align buttons */
+    gap: 0.5rem; /* Adjust spacing */
+  }
+
+  .download-btn img {
+    width: 40px; /* Reduce image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section h2 {
+    font-size: 1.5rem; /* Further reduce heading size */
+  }
+
+  .faq-question {
+    font-size: 1rem; /* Reduce question text size */
+  }
+
+  .faq-answer {
+    font-size: 0.9rem; /* Further adjust answer text size */
+  }
+
+  .faq-icon {
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+
+  .download-btn img {
+    width: 35px; /* Further reduce button image size */
+  }
+}

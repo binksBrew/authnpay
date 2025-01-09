@@ -298,6 +298,84 @@
   .dropdown-item {
     width: 100%;
   }
+  
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none; /* Hidden by default */
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it's on top */
+}
+
+.hamburger-menu span {
+  display: block;
+  height: 3px;
+  background: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Navigation */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links.active {
+  display: block; /* Show menu when active */
+  position: absolute;
+  top: 70px; /* Adjust based on your header height */
+  right: 0;
+  background: white;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  display: block; /* Stack links vertically */
+}
+
+.nav-links.active a {
+  border-bottom: 1px solid #ddd; /* Divider between links */
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex; /* Show hamburger menu on small screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide by default */
+    flex-direction: column; /* Stack links vertically */
+  }
+}
+
 }
 
 
@@ -370,3 +448,27 @@
   border-radius: 1rem;
   cursor: pointer;
 }
+
+
+/* For active dropdown link */
+.nav-links a.active-link,
+.services-link.active-link,
+.pricing-link.active-link {
+  color: #007bff !important; /* Blue color */
+  font-weight: bold; /* Make it bold for emphasis */
+}
+
+/* Optional: Add underline or other styling for clarity */
+.nav-links a.active-link:hover,
+.services-link.active-link:hover,
+.pricing-link.active-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+

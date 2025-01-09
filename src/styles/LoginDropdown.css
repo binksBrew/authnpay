@@ -127,3 +127,79 @@ a {
         transform: translateY(0);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 768px) {
+    .login-left .big-text {
+        font-size: 1.2rem; /* Reduced font size */
+    }
+
+    .login-left .small-text {
+        font-size: 0.75rem; /* Reduced font size for better spacing */
+    }
+
+    .platform-icons li a img {
+        width: 40px; /* Adjust icon size for smaller screens */
+        height: 40px;
+    }
+
+    .platform-icons {
+        grid-template-columns: repeat(4, 1fr); /* Increase columns for better use of space */
+    }
+}
+
+/* Adjust layout for very small screens (mobile-first design) */
+@media (max-width: 480px) {
+    .login-dropdown {
+        padding: 10px; /* Reduce padding for small screens */
+        width: 100%; /* Ensure dropdown takes full width */
+    }
+
+    .login-left {
+        padding-right: 0; /* Remove unnecessary padding */
+        text-align: center; /* Center-align content */
+        margin-bottom: 10px;
+    }
+
+    .login-right {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .platform-icons {
+        grid-template-columns: repeat(3, 1fr); /* Adjust grid for smaller screen space */
+        gap: 8px; /* Reduce gap for better spacing */
+    }
+
+    .login-left .big-text {
+        font-size: 1rem; /* Further reduce font size for compact layout */
+    }
+
+    .login-left .small-text {
+        font-size: 0.7rem;
+    }
+
+    .platform-icons li a img {
+        width: 35px; /* Smaller icons for compact design */
+        height: 35px;
+    }
+}
+
+/* Add hover effect for better interactivity */
+.platform-icons li a img:hover {
+    transform: scale(1.1); /* Slight zoom-in for better emphasis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}

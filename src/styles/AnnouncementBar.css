@@ -1,0 +1,51 @@
+/* Container for the announcement bar */
+.announcement-bar {
+    /* background-color: #111; Dark background */
+  background: linear-gradient(135deg, #2d005c, #003e9b, #007bff);
+    color: #ffffff; /* White text color */
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .announcement-bar:hover {
+    background-color: #222; /* Slightly lighter background on hover */
+  }
+  
+  /* Content inside the bar */
+  .announcement-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Spacing between icon, text, and arrow */
+    font-size: 0.9rem;
+  }
+  
+  .announcement-icon {
+    font-size: 1.2rem; /* Slightly larger for emphasis */
+  }
+  
+  .announcement-text {
+    text-decoration: underline; /* Indicate clickable text */
+    color: #fff; /* Blue text color for emphasis */
+    transition: color 0.3s ease;
+  }
+  
+  .announcement-text:hover {
+    /* color: #0056b3; Darker blue on hover */
+    color: #007bff;
+
+  }
+  
+  .announcement-arrow {
+    font-size: 1rem; /* Arrow size */
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .announcement-arrow:hover {
+    color: #0056b3;
+  }
+  
