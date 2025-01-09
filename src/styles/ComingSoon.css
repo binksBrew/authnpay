@@ -1,0 +1,91 @@
+/* Container */
+.coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2d005c, #003e9b, #007bff);
+    color: #ffffff; /* White text for better contrast */
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Title */
+  .coming-soon-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+  }
+  
+  /* Subtitle Text */
+  .coming-soon-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #d1e9ff; /* Slightly lighter shade for text */
+  }
+  
+  /* Email Subscription Section */
+  .email-subscription {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Input Field */
+  .email-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    width: 250px;
+    max-width: 100%;
+    outline: none;
+    color: #333;
+  }
+  
+  /* Notify Button */
+  .notify-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .notify-button:hover {
+    background-color: #d1e9ff;
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .notify-button:active {
+    transform: scale(0.95); /* Press effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .coming-soon-title {
+      font-size: 2.5rem;
+    }
+  
+    .coming-soon-text {
+      font-size: 1rem;
+    }
+  
+    .email-subscription {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .email-input {
+      width: 100%;
+    }
+  }
+  

@@ -3,7 +3,9 @@ import "../styles/USAI.css";
 import simLockImg from "../assets/usai/simlock.jpg";
 import deviceFusionImg from "../assets/usai/devicebinding.png";
 import coreFrameImg from "../assets/usai/coreframe.jpg";
-import quickKeyImg from "../assets/usai/otakey.jpg";
+import quickKey1Img from "../assets/usai/otakey.jpg";
+import quickKey2Img from "../assets/usai/otakey.jpg";
+import quickKey3Img from "../assets/usai/otakey.jpg";
 import geoSecureImg from "../assets/usai/geosecure.png";
 
 const USAI = () => {
@@ -30,10 +32,24 @@ const USAI = () => {
       reverse: false, // Image on the right
     },
     {
-      title: "QuickKey1, QuickKey2, QuickKey3",
+      title: "QuickKey1",
       description:
-        "QuickKey1, QuickKey2, and QuickKey3 together form a seamless multi-layered authentication process. These dynamic and fast keys work in sequence to ensure quick, reliable, and secure user access, reinforcing the overall security framework with efficiency and speed.",
-      image: quickKeyImg,
+        "QuickKey1 focuses on generating secure, dynamic keys in real time. It ensures rapid and secure access, making the process both efficient and robust.",
+      image: quickKey1Img,
+      reverse: true, // Image on the left
+    },
+    {
+      title: "QuickKey2",
+      description:
+        "QuickKey2 adds an additional authentication layer by validating user interactions. It ensures reliable access control through multi-layered validation.",
+      image: quickKey2Img,
+      reverse: false, // Image on the right
+    },
+    {
+      title: "QuickKey3",
+      description:
+        "QuickKey3 strengthens the authentication framework with its ability to adapt dynamically to security risks, ensuring top-level protection.",
+      image: quickKey3Img,
       reverse: true, // Image on the left
     },
     {

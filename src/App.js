@@ -18,6 +18,8 @@ import Support from "./components/Support";
 import Compliance from "./components/Compliance";
 import SecurityCompliance from "./components/SecurityCompliance";
 import USAI from "./components/USAI";
+import LoginPlatform from "./components/LoginPlatform";
+import ComingSoon from "./components/ComingSoon";
 
 function App() {
   const [showSignup, setShowSignup] = useState(false);
@@ -65,6 +67,8 @@ function App() {
           <Route path="/compliance" element={<Compliance />} />
           <Route path="/security-compliance" element={<SecurityCompliance />} />
           <Route path="/usai" element={<USAI />} />
+          <Route path="/loginplatform" element={<LoginPlatform />} />
+          <Route path="/comingsoon" element={<ComingSoon />} />
 
         </Routes>
 

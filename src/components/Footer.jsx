@@ -314,14 +314,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter */}
+          {/* Newsletter
           <div className="footer-section">
             <h3>Newsletter</h3>
             <p>Subscribe to receive future updates</p>
             <div className="newsletter">
               <input type="email" placeholder="Email address" />
               <button type="submit">→</button>
-            </div>
+            </div> */}
 
             {/* Download Section */}
             <div className="download-section">
@@ -336,7 +336,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        {/* </div> */}
 
         {/* Footer Bottom */}
         <div className="footer-bottom">

@@ -348,8 +348,9 @@
   text-decoration: none;
   color: #333;
   text-align: center;
-  width: 120px;
+  width: 145px !important;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  
 }
 
 .dropdown-item img {
@@ -366,4 +367,6 @@
 .dropdown-item:hover {
   background-color: #f9f9f9;
   transform: translateY(-2px);
+  border-radius: 1rem;
+  cursor: pointer;
 }

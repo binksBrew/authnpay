@@ -2,9 +2,17 @@ import React, { useState, useEffect } from "react";
 import "../styles/Header.css";
 import "../styles/LoginDropdown.css";
 import servicesData from "./servicesData";
-import loginApp from "../assets/loginapp.png";
 import userIcon from "../assets/user.png";
 import logo from "../assets/auth-logo.png";
+import img1 from "../assets/platforms/workspace/gmail.png";
+import img2 from "../assets/platforms/workspace/meet.png";
+import img3 from "../assets/platforms/workspace/teams.png";
+import img4 from "../assets/platforms/ecommerce/amazon.png";
+import img5 from "../assets/platforms/socialmedia/instagram.png";
+import img6 from "../assets/platforms/socialmedia/facebook.png";
+import img7 from "../assets/platforms/banks/yesbank.png";
+import img8 from "../assets/platforms/banks/sbi.png";
+import img9 from "../assets/platforms/banks/icici.png";
 
 const Header = ({ openSignupPopup }) => {
   const [showPricingDropdown, setShowPricingDropdown] = useState(false);
@@ -14,21 +22,21 @@ const Header = ({ openSignupPopup }) => {
   const handleTogglePricingDropdown = (e) => {
     e.preventDefault();
     setShowPricingDropdown((prev) => !prev);
-    setShowServicesDropdown(false); // Close Services dropdown if Pricing is opened
-    setShowUserDropdown(false); // Close User dropdown if Pricing is opened
+    setShowServicesDropdown(false);
+    setShowUserDropdown(false);
   };
 
   const handleToggleServicesDropdown = (e) => {
     e.preventDefault();
     setShowServicesDropdown((prev) => !prev);
-    setShowPricingDropdown(false); // Close Pricing dropdown if Services is opened
-    setShowUserDropdown(false); // Close User dropdown if Services is opened
+    setShowPricingDropdown(false);
+    setShowUserDropdown(false);
   };
 
   const handleToggleUserDropdown = () => {
     setShowUserDropdown((prev) => !prev);
-    setShowPricingDropdown(false); // Close Pricing dropdown if User is opened
-    setShowServicesDropdown(false); // Close Services dropdown if User is opened
+    setShowPricingDropdown(false);
+    setShowServicesDropdown(false);
   };
 
   const closeDropdowns = (e) => {
@@ -49,6 +57,19 @@ const Header = ({ openSignupPopup }) => {
       document.removeEventListener("click", closeDropdowns);
     };
   }, []);
+
+  const platformImages = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+  const platformNames = [
+    "WordPress",
+    "Shopify",
+    "Wix",
+    "Magento",
+    "JavaScript",
+    "React",
+    "Angular",
+    "Vue",
+    "Android",
+  ];
 
   return (
     <header className="header">
@@ -112,7 +133,7 @@ const Header = ({ openSignupPopup }) => {
       <div className="cta-buttons">
         {/* Trusted Devices Button */}
         <a href="/trusted-devices">
-          <button className="trusted-device-btn">USAI WebShield</button>
+          <button className="trusted-device-btn">USAI Web Shield</button>
         </a>
 
         {/* Get Started Button triggers SignupPopup */}
@@ -129,32 +150,17 @@ const Header = ({ openSignupPopup }) => {
         </div>
         {showUserDropdown && (
           <div className="login-dropdown">
-            <a href="/authnpay" className="login-left">
-              <p className="small-text">Pay with</p>
-              {/* <p className="big-text">AuthnPay</p> */}
-          <img src={logo} alt="AuthnPay Logo" className="auth-logo" />
+            <a href="/comingsoon" className="login-left">
+              <img src={logo} alt="AuthnPay Logo" className="auth-logo" />
               <p className="big-text">AuthnPay</p>
-
             </a>
-            <a href="/platforms" className="login-right">
+            <a href="/loginplatform" className="login-right">
               <div className="platform-icons">
-                {[
-                  "WordPress",
-                  "Shopify",
-                  "Wix",
-                  "Magento",
-                  "JavaScript",
-                  "React",
-                  "Angular",
-                  "Vue",
-                  "Android",
-                  "iOS",
-                  "Flutter",
-                  "React Native",
-                ].map((platform) => (
-                  <img key={platform} src={loginApp} alt={platform} />
+                {platformImages.map((image, index) => (
+                  <img key={platformNames[index]} src={image} alt={platformNames[index]} />
                 ))}
               </div>
+              <p className="small-text">Platform Login</p>
             </a>
           </div>
         )}

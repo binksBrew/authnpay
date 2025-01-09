@@ -73,6 +73,7 @@
   
   .slider {
     margin-bottom: 1.5rem;
+    position: relative;
   }
   
   .slider label {
@@ -80,6 +81,15 @@
     font-size: 1rem;
     color: #333;
     margin-bottom: 0.5rem;
+  }
+
+  .slider p {
+    position: absolute;
+    top: -0.1rem; /* Position it above the slider */
+    right: 0; /* Align to the right */
+    font-size: 0.9rem;
+    color: #007bff; /* Blue color for visibility */
+    margin: 0; /* Remove extra spacing */
   }
   
   .slider input[type="range"] {
@@ -109,6 +119,41 @@
     margin-right: 0.7rem;
   }
   
+  /* Summary Section */
+.summary {
+  display: grid; /* Grid layout for equal columns */
+  grid-template-columns: repeat(3, 1fr); /* Three equally spaced columns */
+  padding: 1rem;
+  border: 1px solid #ccc; /* Light gray border */
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  font-family: Arial, sans-serif; /* Ensure consistent font */
+  text-align: center; /* Center all text */
+  gap: 1rem; /* Add spacing between rows/columns */
+}
+
+/* Individual Items */
+.summary div {
+  display: flex;
+  flex-direction: column; /* Stack label and value vertically */
+  align-items: center; /* Center-align text */
+  justify-content: center;
+}
+
+/* Labels (e.g., Total Auths/mo) */
+.summary div span:first-child {
+  font-size: 0.9rem; /* Smaller font for labels */
+  color: #6c757d; /* Muted gray for labels */
+}
+
+/* Values (e.g., ₹12000) */
+.summary div span:last-child {
+  font-size: 1.4rem; /* Slightly larger font for values */
+  font-weight: bold; /* Emphasize numeric values */
+  color: #000; /* Strong black for contrast */
+}
+
 
   .calculator-box select {
     appearance: none; /* Hides default arrow in most browsers */
